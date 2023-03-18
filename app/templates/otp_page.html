@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #c7c7c7;
+        margin: 0%;
+        padding: 0%;
+        font-family: "Poppins", sans-serif;
+      }
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .containt-div {
+        /* border: 2px dotted;*/
+        width: 40%;
+        background-color: white;
+        height: 98vh;
+      }
+      .mobile-text {
+        margin-top: 16%;
+        margin-left: 4%;
+      }
+
+      label {
+        margin-left: 4%;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .mybutton {
+        /* width: 90%; */
+        /* height: 6vh; */
+        background: #181818;
+        /* color: white; */
+        /* font-size: 1.2rem; */
+        border-radius: 0.5rem;
+        height: 3rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        border: none;
+        color: #fff;
+        width: 100%;
+      }
+      .mywhatapp {
+        /* width: 90%; */
+        /* height: 6vh; */
+        background: #e6e6e6;
+        /* color: white; */
+        /* font-size: 1.2rem; */
+        border-radius: 0.5rem;
+        height: 3rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        border: none;
+        color: black;
+        width: 100%;
+      }
+      .ortext {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 200;
+      }
+    .id-1{
+        width: 10%;
+    /* background: red; */
+        height: 5vh;
+        border: 2px solid;
+        margin-left:4%;
+        font-size: larger;
+        font-weight: bold;
+        text-align: center;
+    }
+    .id-2{
+        width: 10%;
+    /* background: red; */
+        height: 5vh;
+        border: 2px solid;
+        margin-left:4%;
+        font-size: larger;
+        font-weight: bold;
+        text-align: center;
+    }
+    .id-3{
+        width: 10%;
+    /* background: red; */
+        height: 5vh;
+        border: 2px solid;
+        margin-left:4%;
+        font-size: larger;
+        font-weight: bold;
+        text-align: center;
+    }
+    .id-4{
+        width: 10%;
+    /* background: red; */
+        height: 5vh;
+        border: 2px solid;
+        margin-left:4%;
+        font-size: larger;
+        font-weight: bold;
+        text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="containt-div">
+        <div class="mobile-text" style="padding: 5%">
+          <p style="font-size: 1.5rem; font-weight: bold">
+            Enter Your OTP 
+          </p>
+          <p
+            class="sub-text"
+            style="color: #767676; font-weight: 500; font-size: 1.2rem"
+          >
+            OTP
+          </p>
+        </div>
+         <div class="otp-box" style="display:flex;">
+            <div class="id-1" contenteditable="true"></div>
+            <div class="id-2" contenteditable="true"></div>
+            <div class="id-3" contenteditable="true"></div>
+            <div class="id-4" contenteditable="true"></div>
+         </div>
+
+        <div class="btn" style="padding: 5%">
+          <button class="mybutton"><a href="{% url 'home' %}" style="text-decoration: none;
+            color:black; color:white;">Continue</a></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

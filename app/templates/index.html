@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #c7c7c7;
+            margin:0%;
+            padding:0%;
+            font-family: 'Poppins', sans-serif;
+        }
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .containt-div{
+            /* border: 2px dotted;*/
+            width: 40%;
+            background-color: white;
+            height: 98vh;
+        }
+        .mobile-text{
+            margin-top: 16%;
+            margin-left: 4%;
+        }
+
+
+        label {
+            margin-left:4%;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+          .mybutton{
+                /* width: 90%; */
+                /* height: 6vh; */
+                background: #181818;
+                /* color: white; */
+                /* font-size: 1.2rem; */
+                border-radius: 0.5rem;
+                height: 3rem;
+                font-size: .875rem;
+                font-weight: 600;
+                border: none;
+                color: #fff;
+                width: 100%;
+          }
+          .mywhatapp{
+                /* width: 90%; */
+                /* height: 6vh; */
+                background: #e6e6e6;
+                /* color: white; */
+                /* font-size: 1.2rem; */
+                border-radius: 0.5rem;
+                height: 3rem;
+                font-size: .875rem;
+                font-weight: 600;
+                border: none;
+                color: black;
+                width: 100%;
+          }
+        .ortext{
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 200;
+        }
+        .mobile-input{
+            margin-left:4%;
+            display: flex;
+            align-items: center;
+            width: 90%;
+        }
+        .contry{
+            background: #dcdcdc;
+            /* color: white; */
+            /* font-size: 1.2rem; */
+            border-radius: 0.5rem;
+            height: 3rem;
+            font-size: .875rem;
+            font-weight: 600;
+            border: none;
+            color: black;
+            width: 6%;
+        }
+        .number > input{
+            background: #e6e6e6;
+            /* color: white; */
+            /* font-size: 1.2rem; */
+            border-radius: 0.5rem;
+            height: 3rem;
+            font-size: .875rem;
+            font-weight: 600;
+            border: none;
+            color: black;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="" method="post">
+     <div class="main-container">
+        <div class="containt-div">
+           <div class="mobile-text" style="padding: 5%;">
+                <p style="font-size: 1.5rem;
+                font-weight: bold;">Enter Your Mobile Number</p>
+                <p class="sub-text" style="color: #767676;
+                font-weight: 500;
+                font-size: 1.2rem;">We'll  send you an OTP</p>
+           </div>
+           <div class="mobile-input" style="padding: 5%;">
+                <div class="contry"><p>+91</p></div>
+                <div class="number" style="width: 85%;">
+                    <input type="text" name="mobile_number" placeholder="Phone Number">
+                </div>
+           </div>
+           <div class="ortext">
+            <p>or</p>
+           </div>
+           <div class="btn" style="padding: 5%;">
+            <button class="mywhatapp">Login via WhatsApp</button>
+        </div>
+
+
+            
+                {% csrf_token %}
+                <div class="btn" style="padding: 5%;">
+                    <button class="mybutton" type="submit">Continue</button>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>
